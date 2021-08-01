@@ -25,15 +25,16 @@
                                         <a class="text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-2" href="#">Forgot Password?</a>
                                     </div>
                                 </div>
-                                <div class="form-row">
+
+                            <?php echo form_close(); ?>
+                            <div class="form-row">
                                     <div class="form-group col">
-                                        <button type="submit" class="btn btn-dark btn-modern btn-block text-uppercase rounded-0 font-weight-bold text-3 py-3" data-loading-text="Loading...">Login</button>
+                                        <button type="submit" id="m_login_signin_submit" class="btn btn-dark btn-modern btn-block text-uppercase rounded-0 font-weight-bold text-3 py-3 m-login__btn m-login__btn--primary" data-loading-text="Loading...">Login</button>
                                         <div class="divider">
                                             <span class="bg-light px-4 position-absolute left-50pct top-50pct transform3dxy-n50">or</span>
                                         </div>
                                         <a href="#" class="btn btn-primary-scale-2 btn-modern btn-block text-transform-none rounded-0 font-weight-bold align-items-center d-inline-flex justify-content-center text-3 py-3" data-loading-text="Loading..."><i class="fab fa-facebook text-5 mr-2"></i> Login With Facebook</a>
                                     </div>
                                 </div>
-                            <?php echo form_close(); ?>
 
                         </div>

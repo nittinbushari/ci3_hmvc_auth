@@ -17,7 +17,7 @@ Options +FollowSymLinks
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 
-	RewriteRule .* /ci_hmvc/index.php/$0 [L]
+	RewriteRule .* /ci3_hmvc_auth/index.php/$0 [L]
 	
 	# Prevents access to dot files (.git, .htaccess) - security.
 	RewriteCond %{SCRIPT_FILENAME} -d

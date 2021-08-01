@@ -115,7 +115,6 @@ class Auth extends Core_Controller {
             }
 
             if ($login) {
-                point_add('login');
                 apply_hook('after_success_login');
                 echo json_encode(array('message' => $this->ion_auth->messages(), 'status' => 1, 'referrer' => site_url($referrer)));
                 exit;

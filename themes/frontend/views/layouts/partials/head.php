@@ -60,8 +60,8 @@
         var site_url = '<?php echo base_url(); ?>';
 
     </script>
-
-    <?php echo vendor('js', 'node_modules/jquery/dist/jquery.min.js'); ?>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <?php //echo vendor('js', 'node_modules/jquery/dist/jquery.min.js'); ?>
     <?php echo $template['metadata']; ?>
     <?php apply_hook('head'); ?>
 </head>
