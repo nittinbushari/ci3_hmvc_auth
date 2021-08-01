@@ -1,0 +1,28 @@
+SetEnv CI_ENV testing
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /sundae/
+
+	<Files .*>
+		Order Deny,Allow
+		Deny From All
+	</Files>
+
+	# non www to www redirect script
+	# RewriteCond %{HTTP_HOST} !^www\.(.*)
+ 	# RewriteRule (.*) http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule .* /ci_hmvc/index.php/$0 [L]
+	
+	# Prevents access to dot files (.git, .htaccess) - security.
+	RewriteCond %{SCRIPT_FILENAME} -d
+	RewriteCond %{SCRIPT_FILENAME} -f
+	RewriteRule "(^|/)\." - [F]
+	
+</IfModule>
+Options -Indexes

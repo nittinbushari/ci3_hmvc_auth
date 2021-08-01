@@ -1,0 +1,18 @@
+body{
+    footer{
+            background:$footer-color !important;
+            border-top-color:$footer-color !important;
+        .footer-copyright{
+            background:$footer-bottom-color !important;
+            border-top:1px solid $footer-bottom-color !important;
+        }
+
+        .footer-ribbon{
+            background-color:$primary-color !important;
+
+            &:before{
+                border-right-color:#00334d !important;
+            }
+        }
+    }
+}

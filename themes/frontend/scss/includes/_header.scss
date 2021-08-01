@@ -1,0 +1,123 @@
+html{
+    &.sticky-header-active{
+        .header-body{
+            top:0px !important;
+        }
+    }
+}
+
+#header{
+    .header-body{
+        border-width: 0px;
+        .header-top{
+            display:none;
+        }
+
+        .header-container{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        .header-nav-bar{
+            .header-container{
+                padding-top:5px;
+                padding-bottom:5px;
+
+            }
+        }
+
+        .header-nav{
+            .top-menu{
+                li{
+                    a{
+                        padding:0.5rem 0.9rem;
+                        color:$dark-gray;
+
+                        i {
+                            margin-left: 8px;
+                        }
+                    }
+
+                    &.dropdown {
+                        a {
+                            padding:0px;
+                            // background:#ccc;
+                            // border-radius: 6px;
+                            // box-shadow: 0px 0px 3px inset rgba(0, 0, 0, 0.3);
+                            // -webkit-box-shadow:0px 0px 3px inset rgba(0, 0, 0, 0.3);
+                            // -moz-box-shadow:0px 0px 3px inset rgba(0, 0, 0, 0.3);
+
+                            &.dropdown-item{
+                                padding:0.5rem 0.9rem;
+                            }
+
+                            
+                        }
+                    }
+
+                    
+
+                    &:hover{
+                        a{
+                            background: $white-color;
+                            color: $dark-gray;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    ul.nav{
+        i{
+            margin-right:7px;
+        }
+
+        li.non-menu{
+            a{
+                color:$dark-gray;
+            }
+
+            &:hover {
+                a{
+                    background: transparent !important;
+                    color: $dark-gray;
+                }
+                
+            }
+        }
+
+        
+            
+        
+    }
+
+    .justify-content-end{
+        ul.nav{
+            
+        }
+    }
+
+    
+
+    .header-nav-main-effect-1{
+        nav{
+            ul{
+                li{
+                    &.dropdown:hover{
+                        .dropdown-menu{
+                            transform: translate3d(0, 0px, 0);
+                            -webkit-transform: translate3d(0, 0px, 0);
+                        }
+                    }
+
+                    &:last-child > a{
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+

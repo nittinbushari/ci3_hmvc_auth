@@ -1,0 +1,112 @@
+.cropit-preview-image-container {
+    cursor: move;
+}
+
+.cropit-preview-background {
+    opacity: .2;
+    cursor: auto;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+
+.export {
+    /* Use relative position to prevent from being covered by image background */
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+#image-cropper {
+
+    .rotate-ccw-btn {
+        i {
+            color:$white-color;
+        }
+        margin-right: 10px;
+    }
+
+    .rotate-cw-btn{
+        i{
+            transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            color:$white-color;
+        }
+        margin-right: 10px;
+        
+    }
+
+    overflow: hidden;
+
+    img {
+        max-width: none;
+    }
+
+    .cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 0;
+        border-radius: 0px;
+        margin-top: 0px;
+        width: 220px;
+        height: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .controls-wrapper {
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+
+        .slider-wrapper {
+            transition: opacity 0.25s;
+            -webkit-transition: opacity 0.25s;
+            -moz-transition: opacity 0.25s;
+
+            .cropit-image-zoom-input {
+                width: 130px;
+                margin: 0 20px;
+                display: inline-block;
+                vertical-align: middle;
+                background: transparent;
+                box-shadow: 0px 0px 0px;
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                height: 5px;
+                background: #eee;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                outline: none;
+
+            }
+
+            .large-image {
+                font-size: 24px;
+                color: #fff;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .small-image {
+                font-size: 16px;
+                color: #fff;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+
+}
+
